@@ -34,7 +34,7 @@ pipeline {
     stage('Tag Docker Image') {
       agent any
       steps {
-        sh 'docker image tag hello-world seomyeongjinhello-world:latest'
+        sh 'docker image tag hello-world seomyeongjin/hello-world:latest'
         sh 'docker image tag hello-world seomyeongjin/hello-world:$BUILD_NUMBER'
       }
     }
